@@ -1,0 +1,25 @@
+strict digraph "" {
+	"LexToken(LETTER,'a',1,0)"	[val=a];
+	"LexToken(LETTER,'b',1,1)"	[val=b];
+	"LexToken(OR,'|',1,2)"	[val="|"];
+	"LexToken(OR,'|',1,2)" -> "LexToken(LETTER,'a',1,0)";
+	"LexToken(OR,'|',1,2)" -> "LexToken(LETTER,'b',1,1)";
+	"LexToken(STAR,'*',1,3)"	[val="*"];
+	"LexToken(STAR,'*',1,3)" -> "LexToken(OR,'|',1,2)";
+	"LexToken(LETTER,'a',1,4)"	[val=a];
+	"LexToken(CONCAT,'.',1,5)"	[val="."];
+	"LexToken(CONCAT,'.',1,5)" -> "LexToken(STAR,'*',1,3)";
+	"LexToken(CONCAT,'.',1,5)" -> "LexToken(LETTER,'a',1,4)";
+	"LexToken(LETTER,'b',1,6)"	[val=b];
+	"LexToken(CONCAT,'.',1,7)"	[val="."];
+	"LexToken(CONCAT,'.',1,7)" -> "LexToken(CONCAT,'.',1,5)";
+	"LexToken(CONCAT,'.',1,7)" -> "LexToken(LETTER,'b',1,6)";
+	"LexToken(LETTER,'b',1,8)"	[val=b];
+	"LexToken(CONCAT,'.',1,9)"	[val="."];
+	"LexToken(CONCAT,'.',1,9)" -> "LexToken(CONCAT,'.',1,7)";
+	"LexToken(CONCAT,'.',1,9)" -> "LexToken(LETTER,'b',1,8)";
+	"LexToken(LAMBDA,'$',1,10)"	[val="$"];
+	"LexToken(CONCAT,'.',1,11)"	[val="."];
+	"LexToken(CONCAT,'.',1,11)" -> "LexToken(CONCAT,'.',1,9)";
+	"LexToken(CONCAT,'.',1,11)" -> "LexToken(LAMBDA,'$',1,10)";
+}
