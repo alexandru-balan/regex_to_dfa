@@ -30,4 +30,4 @@ In order to run the program you need to provide a regular expression (correct re
 
 After writing your regular expresion you can run `python Converter.py`. This will output some info about the original regular expression, the tokens found etc. It will also output to terminal things like the the FirstPos, LastPos and FollowPos collections before converting the regex.
 
-There are also two *pictures* that the program produces, *ast.png* and *dfa.png*. One of the Abstract Syntax Tree (AST) of the regex and another one of the resulting DFA.
+There are also two *pictures* that the program produces, *ast.png* and *dfa.png*. One is of the Abstract Syntax Tree (AST) of the regex and another one of the resulting DFA.
