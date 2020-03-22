@@ -1,0 +1,27 @@
+digraph "" {
+	START -> 134567	[key=0];
+	134567 -> 6	[key=0,
+		letter="$"];
+	134567 -> 4567	[key=0,
+		final=True,
+		letter=b];
+	134567 -> 1234567	[key=0,
+		final=True,
+		letter=a];
+	6 -> 4567	[key=0,
+		final=True,
+		letter=b];
+	4567 -> 6	[key=0,
+		letter="$"];
+	4567 -> 4567	[key=0,
+		final=True,
+		letter=b];
+	1234567 -> 134567	[key=0,
+		final=True,
+		letter=b];
+	1234567 -> 6	[key=0,
+		letter="$"];
+	1234567 -> 1234567	[key=0,
+		final=True,
+		letter=a];
+}

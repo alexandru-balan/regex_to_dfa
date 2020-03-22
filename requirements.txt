@@ -1,3 +1,11 @@
-ply==3.11
-networkx==2.4
+cycler==0.10.0
+decorator==4.4.2
+kiwisolver==1.1.0
 matplotlib==3.2.1
+networkx==2.4
+numpy==1.18.2
+ply==3.11
+pygraphviz==1.5
+pyparsing==2.4.6
+python-dateutil==2.8.1
+six==1.14.0
