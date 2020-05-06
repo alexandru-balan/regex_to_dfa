@@ -1,4 +1,4 @@
-# Converter from REGEX to DFA
+# Converter from REGEX to ~~DFA~~ NFA
 
 ## 1. Requirements:
 - graphviz
