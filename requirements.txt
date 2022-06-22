@@ -3,7 +3,7 @@ decorator==4.4.2
 kiwisolver==1.1.0
 matplotlib==3.2.1
 networkx==2.4
-numpy==1.18.2
+numpy==1.22.0
 ply==3.11
 pygraphviz==1.5
 pyparsing==2.4.6
